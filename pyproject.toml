@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unphishable"
+version = "1.0.0"
+description = "Advanced phishing detection CLI tool with multi-layer analysis"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "UNPHISHABLE Security", email = "security@unphishable.dev"}
+]
+keywords = ["security", "phishing", "detection", "cli", "scanner", "cybersecurity"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Internet",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: System Administrators",
+    "Environment :: Console",
+    "Natural Language :: English"
+]
+
+[project.urls]
+Homepage = "https://github.com/unphishable/unphishable"
+Documentation = "https://github.com/unphishable/unphishable#readme"
+Repository = "https://github.com/unphishable/unphishable"
+Issues = "https://github.com/unphishable/unphishable/issues"
+
+[project.scripts]
+unphishable = "unphishable:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
